@@ -1,0 +1,222 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(189, 189, 189);
+}
+
+.Parte1 {
+  background-color: #0f172a;
+  padding: 20px;
+}
+
+.categorias {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.categorias a {
+  color: #e2e8f0;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: #1e293b;
+  border-radius: 20px;
+  border: 1px solid #334155;
+  transition: all 0.2s ease;
+}
+
+.categorias a:hover {
+  background-color: #ff4655;
+  color: #ffffff;
+  border-color: #ff4655;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 70, 85, 0.4);
+}
+
+.Rodapé {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  background-color: #0f172a;
+}
+
+.Rodapé .btn-inicio {
+  color: #94a3b8;
+  text-decoration: none;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  background-color: #1e293b;
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: 1px solid #334155;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.Rodapé .btn-inicio:hover {
+  background-color: #00a2ff;
+  color: #ffffff;
+  border-color: #00a2ff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 162, 255, 0.3);
+}
+
+.Rodapé footer {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 50px;
+  padding: 10px 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Rodapé p {
+  color: #94a3b8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0; 
+  text-align: center;
+}
+
+.Rodapé footer:hover {
+  transform: translateY(-2px);
+  border-color: #00a2ff;
+  box-shadow: 0 6px 20px rgba(0, 162, 255, 0.3);
+}
+
+#FPS, #Parkour, #Horror, #RPG, #Sobrevivencia {
+  background-color: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 16px;
+  padding: 25px;
+  margin: 30px auto;
+  max-width: 900px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+#FPS h1, #Parkour h1, #Horror h1, #RPG h1, #Sobrevivencia h1 {
+  color: #ff4655;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ff4655;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+[class^="Jogos"] {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+  background-color: #1e293b;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+[class^="Jogos"] a {
+  color: #94a3b8;
+  text-decoration: none;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  background-color: #0f172a;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid #334155;
+  transition: all 0.2s ease;
+}
+
+[class^="Jogos"] a:hover {
+  background-color: #00a2ff;
+  color: #ffffff;
+  border-color: #00a2ff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 162, 255, 0.3);
+}
+
+#FPS h2, #Parkour h2, #Horror h2, #RPG h2, #Sobrevivencia h2 {
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 20px;
+  background-color: #1e293b;
+  padding: 12px 18px;
+  border-left: 4px solid #00a2ff;
+  border-radius: 6px 6px 0 0;
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+
+#FPS p, #Parkour p, #Horror p, #RPG p, #Sobrevivencia p {
+  color: #cbd5e1;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  background-color: #162032;
+  padding: 15px 18px;
+  margin: 0;
+  border-left: 4px solid #334155;
+}
+
+#FPS figure, #Parkour figure, #Horror figure, #RPG figure, #Sobrevivencia figure {
+  margin: 0;
+  background-color: #162032;
+  padding: 0 18px 18px 18px;
+  border-left: 4px solid #334155;
+  border-radius: 0 0 6px 6px;
+}
+
+#FPS img, #Parkour img, #Horror img, #RPG img, #Sobrevivencia img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  display: block;
+}
+
+[class^="Jogos"] a.btn-inicio {
+  margin-left: auto;
+  background-color: #ff4655;
+  color: #ffffff;
+  border-color: #ff4655;
+  font-weight: bold;
+}
+
+[class^="Jogos"] a.btn-inicio:hover {
+  background-color: #e03745;
+  border-color: #e03745;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 70, 85, 0.4);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+p {
+  color: #94a3b8;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  padding: 18px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}

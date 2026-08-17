@@ -1,20 +1,51 @@
 html{
     scroll-behavior: smooth;
+    font-size: 16px;
 }
 
 body{
     background-color: rgb(189, 189, 189);
+    margin: 0;
 }
 
 .Parte1 {
   background-color: #0f172a;
-  padding: 20px;
+  padding: 1.25rem;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-hamburguer {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1.875rem;
+    height: 1.375rem;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.menu-hamburguer span {
+    display: block;
+    height: 0.1875rem;
+    width: 100%;
+    background-color: #ff0000;
+    border-radius: 0.125rem;
+    transition: 0.3s;
+}
+
+.topo-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .categorias {
   display: flex;
   justify-content: center;
-  gap: 12px;
+  gap: 0.75rem;
   flex-wrap: wrap;
 }
 
@@ -22,12 +53,12 @@ body{
   color: #e2e8f0;
   text-decoration: none;
   font-family: sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: bold;
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem;
   background-color: #1e293b;
-  border-radius: 20px;
-  border: 1px solid #334155;
+  border-radius: 1.25rem;
+  border: 0.0625rem solid #334155;
   transition: all 0.2s ease;
 }
 
@@ -35,16 +66,16 @@ body{
   background-color: #ff4655;
   color: #ffffff;
   border-color: #ff4655;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(255, 70, 85, 0.4);
+  transform: translateY(-00.125rem);
+  box-shadow: 0 0.25rem 0.75rem rgba(255, 70, 85, 0.4);
 }
 
 .Rodapé {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
-  padding: 20px;
+  gap: 0.9375rem;
+  padding: 1.25rem;
   background-color: #0f172a;
 }
 
@@ -52,91 +83,91 @@ body{
   color: #94a3b8;
   text-decoration: none;
   font-family: 'Segoe UI', sans-serif;
-  font-size: 13px;
+  font-size: 0.8125rem;
   font-weight: 600;
   background-color: #1e293b;
-  padding: 8px 18px;
-  border-radius: 20px;
-  border: 1px solid #334155;
+  padding: 0.5rem 1.125rem;
+  border-radius: 1.25rem;
+  border: 0.0625rem solid #334155;
   transition: all 0.2s ease;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.2);
 }
 
 .Rodapé .btn-inicio:hover {
   background-color: #00a2ff;
   color: #ffffff;
   border-color: #00a2ff;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 162, 255, 0.3);
+  transform: translateY(-00.125rem);
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 162, 255, 0.3);
 }
 
 .Rodapé footer {
   background-color: #1e293b;
-  border: 1px solid #334155;
-  border-radius: 50px;
-  padding: 10px 25px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  border: 0.0625rem solid #334155;
+  border-radius: 3.125rem;
+  padding: 0.625rem 1.5625rem;
+  box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .Rodapé p {
   color: #94a3b8;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 600;
   margin: 0; 
   text-align: center;
 }
 
 .Rodapé footer:hover {
-  transform: translateY(-2px);
+  transform: translateY(-0.125rem);
   border-color: #00a2ff;
-  box-shadow: 0 6px 20px rgba(0, 162, 255, 0.3);
+  box-shadow: 0 0.375rem 1.25rem rgba(0, 162, 255, 0.3);
 }
 
 #FPS, #Parkour, #Horror, #RPG, #Sobrevivencia {
   background-color: #0f172a;
-  border: 1px solid #1e293b;
-  border-radius: 16px;
-  padding: 25px;
-  margin: 30px auto;
-  max-width: 900px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  border: 0.0625rem solid #1e293b;
+  border-radius: 1rem;
+  padding: 1.5625rem;
+  margin: 1.875rem auto;
+  max-width: 56.25rem;
+  box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.3);
 }
 
 #FPS h1, #Parkour h1, #Horror h1, #RPG h1, #Sobrevivencia h1 {
   color: #ff4655;
   font-family: 'Segoe UI', sans-serif;
-  font-size: 28px;
+  font-size: 1.75rem;
   text-transform: uppercase;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.09375rem;
   margin-top: 0;
-  margin-bottom: 20px;
-  border-bottom: 2px solid #ff4655;
+  margin-bottom: 1.25rem;
+  border-bottom: 0.125rem solid #ff4655;
   display: inline-block;
-  padding-bottom: 5px;
+  padding-bottom: 0.3125rem;
 }
 
 [class^="Jogos"] {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 30px;
+  gap: 0.625rem;
+  margin-bottom: 1.875rem;
   background-color: #1e293b;
-  padding: 12px;
-  border-radius: 12px;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
 }
 
 [class^="Jogos"] a {
   color: #94a3b8;
   text-decoration: none;
   font-family: 'Segoe UI', sans-serif;
-  font-size: 13px;
+  font-size: 0.8125rem;
   font-weight: 600;
   background-color: #0f172a;
-  padding: 8px 16px;
-  border-radius: 20px;
-  border: 1px solid #334155;
+  padding: 0.5rem 1rem;
+  border-radius: 1.25rem;
+  border: 0.0625rem solid #334155;
   transition: all 0.2s ease;
 }
 
@@ -144,46 +175,46 @@ body{
   background-color: #00a2ff;
   color: #ffffff;
   border-color: #00a2ff;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(0, 162, 255, 0.3);
+  transform: translateY(-0.125rem);
+  box-shadow: 0 0.25rem 0.625rem rgba(0, 162, 255, 0.3);
 }
 
 #FPS h2, #Parkour h2, #Horror h2, #RPG h2, #Sobrevivencia h2 {
   color: #ffffff;
   font-family: 'Segoe UI', sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   background-color: #1e293b;
-  padding: 12px 18px;
-  border-left: 4px solid #00a2ff;
-  border-radius: 6px 6px 0 0;
-  margin-top: 25px;
+  padding: 0.75rem 1.125rem;
+  border-left: 0.25rem solid #00a2ff;
+  border-radius: 0.375rem 0.375rem 0 0;
+  margin-top: 1.5625rem;
   margin-bottom: 0;
 }
 
 #FPS p, #Parkour p, #Horror p, #RPG p, #Sobrevivencia p {
   color: #cbd5e1;
   font-family: 'Segoe UI', sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.6;
   background-color: #162032;
-  padding: 15px 18px;
+  padding: 0.9375rem 1.125rem;
   margin: 0;
-  border-left: 4px solid #334155;
+  border-left: 0.25rem solid #334155;
 }
 
 #FPS figure, #Parkour figure, #Horror figure, #RPG figure, #Sobrevivencia figure {
   margin: 0;
   background-color: #162032;
-  padding: 0 18px 18px 18px;
-  border-left: 4px solid #334155;
-  border-radius: 0 0 6px 6px;
+  padding: 0 1.125rem 1.125rem 1.125rem;
+  border-left: 0.25rem solid #334155;
+  border-radius: 0 0 0.375rem 0.375rem;
 }
 
 #FPS img, #Parkour img, #Horror img, #RPG img, #Sobrevivencia img {
   max-width: 100%;
   height: auto;
-  border-radius: 8px;
-  border: 1px solid #334155;
+  border-radius: 0.5rem;
+  border: 0.0625rem solid #334155;
   display: block;
 }
 
@@ -198,25 +229,49 @@ body{
 [class^="Jogos"] a.btn-inicio:hover {
   background-color: #e03745;
   border-color: #e03745;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(255, 70, 85, 0.4);
+  transform: translateY(-0.125rem);
+  box-shadow: 0 0.25rem 0.75rem rgba(255, 70, 85, 0.4);
 }
 
 img {
   max-width: 100%;
   height: auto;
-  border-radius: 8px;
+  border-radius: 0.5rem;
 }
 
 p {
   color: #94a3b8;
   font-family: 'Segoe UI', sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.6;
   background-color: #1e293b;
-  border: 1px solid #334155;
-  border-radius: 10px;
-  padding: 18px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  margin-bottom: 20px;
+  border: 0.0625rem solid #334155;
+  border-radius: 0.625rem;
+  padding: 1.125rem;
+  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.2);
+  margin-bottom: 1.25rem;
+}
+
+@media (max-width: 48rem) {
+    .menu-hamburguer {
+        display: flex !important;
+    }
+
+    .categorias {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0.9375rem;
+        gap: 0.5rem;
+        width: 100%;
+    }
+
+    #menu-toggle:checked ~ .categorias {
+        display: flex;
+    }
+
+    .categorias a {
+        width: 90%;
+        text-align: center;
+    }
 }

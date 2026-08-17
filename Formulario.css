@@ -1,50 +1,61 @@
 body{
     background-color: black;
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+form {
+    width: 100%;
+    max-width: 35rem;
 }
 
 fieldset {
     background-color: #0f172a;
     border: 2px solid #334155;
-    border-radius: 12px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 0.75ren;
+    padding: 1.25rem;
+    margin-bottom: 1.25rem;
+    box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.3);
 }
 
 legend {
     color: #ffffff;
     font-family: 'Segoe UI', sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bold;
     text-transform: uppercase;
     background-color: #1e293b;
-    padding: 8px 18px;
+    padding: 0.5rem 1.125rem;
     border: 1px solid #334155;
-    border-radius: 8px;
+    border-radius: 0.5rem;
 }
 
 div {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 label {
     display: block;
     color: #e2e8f0;
     font-family: 'Segoe UI', sans-serif;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: bold;
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
 }
 
 input {
     width: 100%;
-    padding: 12px 15px;
+    padding: 0.75rem 0.9375rem;
     background-color: #162032;
     border: 1px solid #334155;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     color: #ffffff;
     font-family: 'Segoe UI', sans-serif;
-    font-size: 14px;
+    font-size: 0.875rem;
     box-sizing: border-box;
     outline: none;
     transition: all 0.2s ease;
@@ -52,7 +63,7 @@ input {
 
 input:focus {
     border-color: #00a2ff;
-    box-shadow: 0 0 10px rgba(0, 162, 255, 0.3);
+    box-shadow: 0 0 0.625rem rgba(0, 162, 255, 0.3);
 }
 
 input:invalid {
@@ -63,9 +74,9 @@ input:invalid {
     display: none;
     color: #ff4655;
     font-family: 'Segoe UI', sans-serif;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: bold;
-    margin-top: 6px;
+    margin-top: 0.375rem;
 }
 
 form:invalid input:invalid ~ .error-mgs,
@@ -78,19 +89,19 @@ button[type="submit"] {
     background-color: #ff4655;
     color: #ffffff;
     font-family: 'Segoe UI', sans-serif;
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: bold;
-    padding: 14px;
-    border-radius: 10px;
+    padding: 0.875rem;
+    border-radius: 0.625rem;
     border: 1px solid #ff4655;
     cursor: pointer;
     transition: all 0.2s ease;
-    box-shadow: 0 4px 10px rgba(255, 70, 85, 0.3);
+    box-shadow: 0 0.25rem 0.625rem rgba(255, 70, 85, 0.3);
 }
 
 button[type="submit"]:hover {
     background-color: #e03745;
     border-color: #e03745;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(255, 70, 85, 0.4);
+    transform: translateY(-01.125rem);
+    box-shadow: 0 0.375rem 0.9375rem rgba(255, 70, 85, 0.4);
 }

@@ -20,7 +20,13 @@
             <a href="#Horror" title="#Horror">Horror</a>
             <a href="#RPG" title="RPG">RPG</a>
             <a href="#Sobrevivencia" title="Sobrevivencia">Sobrevivência</a>
+            <a href="Intensivo de Front-end 04.html" title="Botão">Botão</a>
         </nav>
+    </div>
+
+    <div id="modal-imagem" class="modal-img-overlay">
+        <span class="fechar-modal">&times;</span>
+        <img class="conteudo-modal" id="img01" alt="Imagem ampliada">
     </div>
 
     <div id="FPS">
@@ -240,5 +246,29 @@
             <P>&copy;2026 Jogos Roblox, feito por Anna Clara Q.</P>
         </footer>
     </div>
+
+    <script>
+        const modalImg = document.getElementById('modal-imagem');
+        const imgModalContent = document.getElementById('img01');
+        const imagens = document.querySelectorAll('#FPS img, #Parkour img, #Horror img, #RPG img, #Sobrevivencia img');
+        const spanFechar = document.querySelector('.fechar-modal');
+
+        imagens.forEach(img => {
+            img.addEventListener('click', () => {
+                modalImg.style.display = 'flex';
+                imgModalContent.src = img.src;
+            });
+        });
+
+        spanFechar.addEventListener('click', () => {
+            modalImg.style.display = 'none';
+        });
+
+        modalImg.addEventListener('click', (evento) => {
+            if (evento.target === modalImg) {
+                modalImg.style.display = 'none';
+            }
+        });
+    </script>
 </body>
 </html>

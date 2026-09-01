@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="botão.css">
+    <title>Botão</title>
+</head>
+<body>
+    <nav>
+        <a href="Intensivo de Front-end 01.html" class="voltar">Voltar</a>
+    </nav>
+    <div id="Contador">0</div>
+    <button id="botao" class="BotaoColorido">Click!</button>
+
+    <div class="container">
+
+        <div id="ModalTela" class="modal">
+            <div class="modalC">
+                <p>Click click click</p>
+                <button id="fechar">X</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const botao = document.getElementById('botao');
+        const contadorTexto = document.getElementById('Contador');
+        const modal = document.getElementById('ModalTela');
+        const fecharModal = document.getElementById('fechar');
+
+        let cliques = 0;
+
+        function corAleatoria() {
+            const letras = '0123456789ABCDEF';
+            let cor = '#';
+            for (let i = 0; i < 6; i++) {
+                cor += letras[Math.floor(Math.random() * 16)];
+            }
+            return cor;
+        }
+
+        botao.addEventListener('mouseenter', () => {
+            botao.style.backgroundColor = corAleatoria();
+        });
+
+        botao.addEventListener('click', () => {
+            cliques++;
+    
+            if (cliques === 1) {
+                contadorTexto.style.display = 'block';
+            }
+
+            contadorTexto.textContent = cliques;
+
+            modal.style.display = 'flex';
+        });
+
+        fecharModal.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+
+        window.addEventListener('click', (evento) => {
+            if (evento.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
